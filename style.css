@@ -1,0 +1,242 @@
+
+.main-slide img{
+    position: relative;
+   height: 600px;
+   width: 100%;
+   z-index: 1;
+   object-fit: cover;
+   object-position: center;
+}
+.nav{
+    z-index: 2;
+    position: absolute;
+    bottom: 600px;
+    color: rgb(245, 217, 181);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;   
+}
+#nave{
+    border: 1px transparent solid;
+    color: black;
+}
+#nave:hover{
+    border: 2px bisque solid;
+    color: rgb(255, 92, 119);
+}
+.menue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: rgb(255, 251, 245);
+    margin-left: 0px;
+    margin-right:0px ;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.menue h1{
+    color: burlywood;
+    transform: translateX(0);
+    transition: 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    font-size: 40px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right:0px ;
+}
+.menue h1:hover{
+    transform:translateX(100px);
+   transition: 2s;
+}
+
+.food-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.food-item span{
+   font-size: 25px;
+   color: rgb(255, 54, 54) !important;
+
+}
+.food-item img{
+    height: 200px;
+    border-radius: 20px;
+}
+.See{
+    width: 200px;
+    color: white;
+    background-color: burlywood;
+    border-radius: 20px;
+    margin-top: 10px;
+    height: 50px;
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 0px;
+    margin-right:0px ;
+}
+.See:hover{
+    background-color: white;
+    color: rgb(227, 111, 130);
+}
+.Food{
+    transform: translateX(0);
+    transition: 0s;
+    font-size: 60px;
+   color: rgb(227, 164, 88); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.Food:hover{
+   color: rgb(223, 95, 117);
+   transform:translateX(100px);
+   transition: 2s;
+}
+
+.menu{
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+@keyframes food{
+   0%,33%{transform: translateX(0);opacity: 0.3;}
+   10%,23%{transform: translateX(60px);opacity: 1;}
+}
+.food-item:nth-child(1){
+    animation: food 3s infinite;
+}
+.food-item:nth-child(2){
+    animation: food 5s infinite;
+    animation-delay: 4s;
+}
+.food-item:nth-child(3){
+    animation: food 6s infinite ;
+    animation-delay: 8s;
+}
+ .food-item h2{
+        font-size: 30px;
+        margin-top: 10px;
+        color: rgb(255, 187, 98);
+    }
+    .about-us{
+        display: flex;
+        gap: 30px;
+        align-items: center;  
+        animation: about 2s linear infinite ;
+    }
+    .about-text{
+        flex: 1;
+        font-size: 30px;
+        color: rgb(244, 159, 159);
+    }
+    .about-img{
+        height: 500px;
+      
+    }
+    @keyframes about{
+        0%{
+            opacity: calc(1);
+            transform: rotate(0deg);
+        }
+        77%{
+            opacity: calc(1);
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(20deg);
+        }
+    }
+    @media(max-width:768px){
+        .about-us{
+            flex-direction: column;
+            text-align: center;
+        }
+        .about-img{
+            width: 90%;
+            max-width: 350px;
+        }
+        .about-text{
+            font-size: 16px;
+            line-height: 1.6;
+        }
+         .aboute {
+             font-size: 17px;
+            line-height: 1.6;
+        }
+        .H {
+             font-size: 17px;
+            line-height: 1.6;
+        }
+    }
+    #reservation{
+        background-color: blanchedalmond;
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .reser{
+        color: antiquewhite;
+        background-color: beige;
+        border-radius: 4px;
+        color: rgb(255, 192, 109);
+        height: 50px;
+        width: 50px;
+    }
+    .reservation h3{
+        color: rgb(255, 158, 40);
+    }
+    #res-btn{
+        height: 40px;
+        width: 15%;
+        border-radius: 40px;
+        height: 40px;
+        color: rgb(27, 26, 26);
+       background-color: rgb(255, 237, 210);
+       font-weight: bold !important;
+       margin-bottom: 100px;
+       margin-top: 0;
+
+    }
+    .aboui{
+        margin-bottom: 50px;
+        height: 500px;
+         animation: abu 1s infinite 2s ;
+    }
+    .aboute{
+        color: rgb(179, 14, 69);
+    }
+   .ab {
+  position: relative;
+  
+}
+
+  @keyframes abu{
+        0%{
+            transform: translateX(-5%);
+            opacity: 0;
+        }
+        77%{     
+            transform: translateX(-4%);
+            opacity: 1;
+        }
+        100%{
+            transform:translateX(0%) ;
+        }
+    }
