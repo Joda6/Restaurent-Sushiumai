@@ -34,8 +34,8 @@
     margin-left: 0px;
     margin-right:0px ;
     border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top:     20px;
+    margin-bottom: 20px;
     
 }
 .menue h1{
@@ -137,7 +137,7 @@
         display: flex;
         gap: 30px;
         align-items: center;  
-        animation: about 2s linear infinite ;
+         animation: abu 2s infinite 2s ;
     }
     .about-text{
         flex: 1;
@@ -147,20 +147,7 @@
     .about-img{
         height: 500px;
       
-    }
-    @keyframes about{
-        0%{
-            opacity: calc(1);
-            transform: rotate(0deg);
-        }
-        77%{
-            opacity: calc(1);
-            transform: rotate(0deg);
-        }
-        100%{
-            transform: rotate(20deg);
-        }
-    }
+      }
     @media(max-width:768px){
         .about-us{
             flex-direction: column;
@@ -175,10 +162,6 @@
             line-height: 1.6;
         }
          .aboute {
-             font-size: 17px;
-            line-height: 1.6;
-        }
-        .H {
              font-size: 17px;
             line-height: 1.6;
         }
@@ -216,8 +199,8 @@
     }
     .aboui{
         margin-bottom: 50px;
-        height: 500px;
-         animation: abu 1s infinite 2s ;
+        height: 600px;
+        animation: abu 1s infinite 2s ;
     }
     .aboute{
         color: rgb(179, 14, 69);
@@ -229,14 +212,24 @@
 
   @keyframes abu{
         0%{
-            transform: translateX(-5%);
+            transform: translateX(-4%);
             opacity: 0;
         }
         77%{     
-            transform: translateX(-4%);
+            transform: translateX(0%);
             opacity: 1;
         }
         100%{
             transform:translateX(0%) ;
         }
+    }
+    .con{
+        cursor: pointer;
+    }
+    .abo {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
